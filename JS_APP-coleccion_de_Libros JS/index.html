@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP Coleccion de Libros</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">Mi Coleccion de<span class="text-primary">Libros</span></h1>
+        <!-- formulario -->
+        <form id="libro-form">
+            <div class="form-group">
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">#ISBN</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+
+            <input type="submit"  value="Agregar libro" class="btn btn-primary btn-block">
+        </form>
+
+        <!-- tabla que voy a ir agregando cada libro a mi coleccion  -->
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>ISBN#</th>
+                    <!-- opcion de eliminar  -->
+                    <th></th>
+                </tr>
+            </thead>
+
+            <!-- cuerpo de la tabla -->
+            <tbody id="libro-list"></tbody>
+        </table>
+
+    </div>
+    <script src="appMilibro.js"></script>
+</body>
+</html>
